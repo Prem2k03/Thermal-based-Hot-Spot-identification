@@ -125,9 +125,55 @@ Change the number to whatever temperature (in Celsius) you want the device to re
 
 ---
 
+## Sample Output
+
+This is what the device produces when it detects a hot spot.
+
+**Wiring / Schematic**
+
+![Schematic Diagram](./word_media_image2.png)
+
+**Raw thermal data vs after bilinear interpolation**
+
+| Raw 8x8 thermal data | After bilinear interpolation (80x80) |
+|---|---|
+| ![raw](./word_media_image34.png) | ![interpolated](./word_media_image35.png) |
+
+**Combined output (captured image + raw + interpolated thermal data)**
+
+![combined output](./word_media_image33.png)
+
+**Camera image before and after the hot spot is marked**
+
+| Normal camera image | Thermal overlay with bounding box |
+|---|---|
+| ![normal](./word_media_image42.jpeg) | ![overlay](./word_media_image43.jpeg) |
+
+**Other graphs generated automatically**
+
+| 3D thermal plot | Temperature per pixel (line graph) | Temperature distribution (histogram) |
+|---|---|---|
+| ![3d](./word_media_image36.png) | ![line](./word_media_image37.jpg) | ![hist](./word_media_image38.jpg) |
+
+**Terminal / Shell output when the script runs**
+
+![shell output](./word_media_image39.png)
+
+**The assembled Hot-Spot Pi HAT board**
+
+![assembled board](./word_media_image41.png)
+
+---
+
 ## Testing the Device Safely
 
-If you don't want to test this directly on a real circuit board, you can build a simple test board instead. This project also includes a small 3x3 grid of resistors, controlled by 6 switches, three for rows and three for columns. By turning on one row switch and one column switch together, you can heat up just one resistor at a time using a 12 volt power supply. This is a safe way to create a controlled hot spot and check if the device detects it correctly. Details and the circuit diagram for this test setup are in the `test-rig` folder.
+If you don't want to test this directly on a real circuit board, you can build a simple test board instead. This project also includes a small 3x3 grid of resistors, controlled by 6 switches, three for rows and three for columns. By turning on one row switch and one column switch together, you can heat up just one resistor at a time using a 12 volt power supply. This is a safe way to create a controlled hot spot and check if the device detects it correctly.
+
+| Test PCB (resistor matrix) | Test PCB circuit diagram |
+|---|---|
+| ![test pcb](./word_media_image31.png) | ![test pcb circuit](./word_media_image32.png) |
+
+Details and the full circuit diagram for this test setup are also explained above.
 
 ---
 
@@ -142,7 +188,7 @@ If you don't want to test this directly on a real circuit board, you can build a
 ## Author
 
 Premkumar S
-M.Sc. Electronics and Communication Systems,
+M.Sc. Electronics and Communication Systems
 Sri Krishna Arts and Science College, Coimbatore
 
 Project Guide: Dr. S. Devendiran, Assistant Professor, Department of ECS
