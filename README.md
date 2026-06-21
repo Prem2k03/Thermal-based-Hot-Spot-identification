@@ -142,7 +142,7 @@ If you don't want to test this directly on a real circuit board, you can build a
 ## Author
 
 Premkumar S
-M.Sc. Electronics and Communication Systems
+M.Sc. Electronics and Communication Systems,
 Sri Krishna Arts and Science College, Coimbatore
 
 Project Guide: Dr. S. Devendiran, Assistant Professor, Department of ECS
