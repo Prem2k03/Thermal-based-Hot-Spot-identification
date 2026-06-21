@@ -33,7 +33,7 @@ sudo apt install git -y
 3. Download (clone) this project using:
 
 ```
-git clone https://github.com/your-username/hotspot-pi-hat.git
+git clone https://github.com/Prem2k03/Thermal-based-Hot-Spot-identification
 ```
 
 4. Move into the project folder:
